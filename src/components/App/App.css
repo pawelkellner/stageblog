@@ -1,0 +1,19 @@
+@import url('https://fonts.cdnfonts.com/css/brandon-grotesque-regular');
+
+*,*::before,*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  font-family: brandon-grotesque, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  background: black;
+  overflow-x: hidden;
+}

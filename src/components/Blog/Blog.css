@@ -1,0 +1,47 @@
+.blog{
+    cursor: pointer;
+    position: relative;
+    width: 40rem;
+    height: 40rem;
+    border: solid 0.5rem white;
+    overflow: hidden;
+}
+
+.blog__figure{
+    width: 100%;
+    height: 100%;
+    background: white;
+}
+
+.blog__figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.2s;
+    object-fit: contain;
+}
+
+.blog:hover img{
+    transform: scale(110%);
+}
+
+.blog:hover .blog__title{
+    color: #f7a600;
+}
+
+.fotoFade{
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.blog__title{
+    color: white;
+    font-size: 2rem;
+    padding: 1rem;
+    transition: all 0.2s;
+}

@@ -1,0 +1,112 @@
+.skills{
+    width: 100%;
+    min-height: 100rem;
+    padding: 4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.skillsFlexWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.skillsTitleWrapper{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    color: white;
+}
+
+.skillsTitle{
+    text-align: center;
+    position: relative;
+    color: white;
+    font-size: 6rem;
+    background: none;
+    z-index: 1;
+    width: 100%;
+}
+
+.skillsTitle::before, .skillsTitle::after{
+    content: '';
+    display: block;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    z-index: -4;
+}
+
+.skillsTitle::before{
+    width: 50%;
+    left: 0%;
+}
+
+.skillsTitle::after{
+    width: 50%;
+    right: 0%;
+}
+
+.skillsSpan__title{
+    display: inline-block;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background: black;
+}
+
+.skillsContentWrapper{
+    width: 100%;
+    display: flex;
+    height: max-content;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+
+@media screen and (max-width: 470px){
+    .skillsTitle{
+        font-size: 5rem;
+    }
+}
+
+@media screen and (max-width: 799px){
+    .skillsFlexWrapper{
+        margin-top: 25%;
+    }
+}
+
+@media screen and (max-width: 741px){
+    .skillsFlexWrapper{
+        margin-top: 30%;
+    }
+}
+
+@media screen and (max-width: 635px){
+    .skillsFlexWrapper{
+        margin-top: 35%;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .skillsFlexWrapper{
+        margin-top: 45%;
+    }
+}
+
+@media screen and (max-width: 432px){
+    .skillsFlexWrapper{
+        margin-top: 50%;
+    }
+}
+
+@media screen and (max-width: 440px){
+    .skills{
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;   
+    }
+}
